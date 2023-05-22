@@ -4,8 +4,8 @@ const outputRenderer = document.getElementById("subWindow");
 
 let editor = ace.edit("editor");
 editor.setTheme("ace/theme/monokai");
-editor.session.setMode("ace/mode/javascript");
+editor.session.setMode("ace/mode/html");
 
 runButton.addEventListener("click", (eventObject) => {
-	outputRenderer.srcdoc = codeInput.value;
+	outputRenderer.srcdoc = editor.getValue();
 });
