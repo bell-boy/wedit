@@ -30,6 +30,12 @@
 				align-items: center;
 			}
 
+			#headerContainer {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
 			body {
 				margin: 0px;
 			}
@@ -38,7 +44,14 @@
 	<body>
 		<div id="mainContainer">
 			<div id="editorContainer">
-				<button id="runButton"> run </button>
+				<div id="headerContainer">
+					<div id="tabContainer">
+					</div>
+					<div id="functionContainter">
+						<button id="runButton"> run </button>
+						<button id="newButton"> new </button>
+					</div>
+				</div>
 				<div id="editor"></div>
 			</div>
 			<iframe id="subWindow" srcdoc="<p>Enter Code to Get Started!</p>"></iframe>
